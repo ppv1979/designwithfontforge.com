@@ -15,7 +15,7 @@
               {% if p.path contains 'en-US' %}
 
                 {% if currentPost and p.title != 'Design With FontForge' %}
-                  <a class="prev" href="{{p.url}}">
+                  <a class="prev" href="..{{p.url}}">
                     <span>Prev</span>
                     <span><h3>{{p.title}}</h3></span>
                   </a>
@@ -40,7 +40,7 @@
               {% if p.path contains 'en-US' %}
 
                 {% if currentPost and p.title != 'Design With FontForge' %}
-                  <a class="next" href="{{p.url}}">
+                  <a class="next" href="..{{p.url}}">
                     <span>Next</span>
                     <span><h3>{{p.title}}</h3></span>
                   </a>
@@ -69,7 +69,7 @@
             {% for p in pageList %}
               {% if p.path contains 'en-US' and p.title != 'Design With FontForge' %}
                 <li>
-                  <a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
+                  <a {% if p.url == page.url %}class="active"{% endif %} href="..{{ p.url }}">
                     {{ p.title }}
                   </a>
                 </li>

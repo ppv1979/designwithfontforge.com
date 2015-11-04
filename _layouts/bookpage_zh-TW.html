@@ -15,7 +15,7 @@
               {% if p.path contains 'zh-TW' %}
 
                 {% if currentPost and p.title != 'FontForge 字體設計' %}
-                  <a class="prev" href="{{p.url}}"> 
+                  <a class="prev" href="..{{p.url}}"> 
                     <span class="chapter">上一章</span>
                     <span>{{p.title}}</span>
                   </a>
@@ -40,7 +40,7 @@
               {% if p.path contains 'zh-TW' %}
 
                 {% if currentPost and p.title != 'FontForge 字體設計' %}
-                  <a class="next" href="{{p.url}}"> 
+                  <a class="next" href="..{{p.url}}"> 
                     <span class="chapter">下一章</span>
                     <span>{{p.title}}</span>
                   </a>
@@ -69,7 +69,7 @@
           {% for p in pageList %}
               {% if p.path contains 'zh-TW' and p.title != 'FontForge 字體設計' %}
                 <li>
-                  <a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
+                  <a {% if p.url == page.url %}class="active"{% endif %} href="..{{ p.url }}">
                     {{ p.title }}
                   </a>
                 </li>
