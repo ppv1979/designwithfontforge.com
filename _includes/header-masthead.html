@@ -6,6 +6,14 @@
     <h2>{{ site.subtitle }}</h2>
     <div class="lang">
     	<a href="#" class="lang">[English]</a>&nbsp;|&nbsp;
+     	<a href="
+    		{% assign RUurl = page.name | replace: '.md', '.html' | prepend: '/ru-RU/' %}
+    		{% if urlList contains RUurl %}
+    			{{ page.name | prepend: '../ru-RU/' | replace: '.md', '.html' }}
+    		{% else %}
+    			../ru-RU/index.html
+    		{% endif %}	
+    	" class="lang">[Русский]</a>&nbsp;|&nbsp;
     	<a href="
     		{% assign CNurl = page.name | replace: '.md', '.html' | prepend: '/zh-CN/' %}
     		{% if urlList contains CNurl %}
