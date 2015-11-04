@@ -14,7 +14,7 @@
 
               {% if p.path contains 'ru-RU' %}
 
-                {% if currentPost and p.title != 'FontForge: проектирование' %}
+                {% if currentPost and p.title != 'Дизайн шрифта в FontForge' %}
                   <a class="prev" href="{{p.url}}">
                     <span>Пред</span>
                     <span><h3>{{p.title}}</h3></span>
@@ -39,7 +39,7 @@
 
               {% if p.path contains 'ru-RU' %}
 
-                {% if currentPost and p.title != 'FontForge: проектирование' %}
+                {% if currentPost and p.title != 'Дизайн шрифта в FontForge' %}
                   <a class="next" href="{{p.url}}">
                     <span>След</span>
                     <span><h3>{{p.title}}</h3></span>
@@ -67,7 +67,7 @@
           </a>-->
           <ol class="rectangle-list">
             {% for p in pageList %}
-              {% if p.path contains 'ru-RU' and p.title != 'FontForge: проектирование' %}
+              {% if p.path contains 'ru-RU' and p.title != 'Дизайн шрифта в FontForge' %}
                 <li>
                   <a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
                     {{ p.title }}
