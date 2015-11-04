@@ -2,7 +2,7 @@
 published: true
 layout: homepage_ru-RU
 weight: 0
-title: FontForge: проектирование
+title: Дизайн шрифта с FontForge
 ---
 
 <!--
