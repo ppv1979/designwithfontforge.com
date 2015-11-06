@@ -5,7 +5,7 @@ pygments: false
 permalink: none
 exclude: ["en-US/images/precompressed/", "node_modules", "Gruntfile.js", "package.json"]
 title: Design With FontForge
-title_ru-RU: Дизайн шрифта с FontForge
+title_ru-RU: Дизайн шрифта с&nbsp;FontForge
 title_zh-CN: FontForge 与字体设计
 title_zh-TW: FontForge 與字體設計
 subtitle: A book about how to create new typefaces using FontForge
