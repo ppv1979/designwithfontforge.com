@@ -34,7 +34,8 @@ Your 1.001 release might not have fsType set to 0 or be run through fontcrunch, 
 Sadly, the third PATCH version number isn't available in OpenType font version metadata fields.
 Instead, increment the MINOR version number for such changes to hinting or metadata. 
 
-Also, the version should have no more than 5 decimal places, eg `2.00099`
+Also, the version should have no more than 3 decimal places, and this may be represented with 5 in a TTX file.
+Eg `2.001` is typical, and may appear as `2.00099` in TTX XML. 
 
 If you release libre fonts, the [Github Releases](https://www.google.com/search?q=github+releases) features are very useful.
 
@@ -46,8 +47,3 @@ This means for font designers that our font family names should be set up in a w
 
 This [Family Naming Google Docs Spreadsheet](https://docs.google.com/spreadsheets/d/1ckHigO7kRxbm9ZGVQwJ6QJG_HjV_l_IRWJ_xeWnTSBg/edit#gid=0) is based on information shared by Polish font expert Adam Twardoch and discussed in the [Fontlab forum](http://forum.fontlab.com/index.php?topic=313.0). 
 It supercedes the [OpenType specification example](https://www.microsoft.com/typography/otspec/namesmp.htm). 
-
-Also:
-
-* Remove all NAME table keys with PID=1 - those are for MacOS 9 and earlier, and thus over 10 years behind us; and 
-* Remove NAME table id 18 if present, it is only needed for MacOS 9 too
